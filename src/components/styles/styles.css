@@ -1,0 +1,132 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Define a flex container */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Style your code card */
+.code-card {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  min-width: 280px; /* Set a min-width for mobile layout */
+  max-width: 800px; /* Set a max-width for desktop layout */
+  width: 80%; /* Make it responsive */
+  text-align: center;
+}
+
+/* Style your progress circle */
+.progress-circle {
+  margin-top: 20px;
+}
+
+/* Style add button */
+.add-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+/* Add some responsive media queries */
+@media (min-width: 600px) {
+  .flex-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .code-card {
+    margin: 20px;
+  }
+}
+
+.addCode-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f7f7f7;
+}
+
+.addCode-input {
+  width: 300px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.addCode-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.codeList-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.addCode-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+.code-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: white;
+  width: 200px;
+}
+
+.code-name {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.code-number {
+  color: #007BFF;
+  margin-bottom: 10px;
+}
+
+.code-progress {
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #ddd;
+}
